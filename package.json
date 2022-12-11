@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maryshchyn/nodejs-homevork-1.git"
+    "url": "git+https://github.com/Maryshchyn/node.js-hw1.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Maryshchyn/nodejs-homevork-1/issues"
+    "url": "https://github.com/Maryshchyn/node.js-hw1/issues"
   },
-  "homepage": "https://github.com/Maryshchyn/nodejs-homevork-1#readme",
+  "homepage": "https://github.com/Maryshchyn/node.js-hw1#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
   },
