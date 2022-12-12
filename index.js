@@ -9,19 +9,19 @@ const invorceAction = async ({action, id, name, email, phone}) =>{
     switch (action) {
         case 'list':
             const contactsList = await contacts.listContsacts();
-            console.log(contactsList)
+            console.table(contactsList)
             break;
         case 'get':
             const oneContact = await contacts.get(id);
-            console.log(oneContact);
+            console.table(oneContact);
             break;
         case "add":
             const newContact = await contacts.add({ name, email, phone })
-            console.log(newContact)
+            console.table(newContact)
             break;
         case "remove":
             const deleteContact = await contacts.remove(id)
-            console.log(deleteContact);
+            console.table(deleteContact);
             break;
         
         default:
