@@ -1,5 +1,4 @@
-// const yargs = require("yargs");
-// const {hideBin} = require("yargs/helpers")
+
 
 const {program} = require("commander")
 
@@ -42,28 +41,7 @@ const options = program.opts();
 invorceAction(options)
 
 
-// const arr = hideBin(process.argv);
-// const { argv } = yargs(arr);
 
-// invorceAction(argv)
-
-// program
-//     .option("-a, --action <type>")
-//     .option("-i, --id <type>")
-//     .option("-n, --name <type>")
-//     .option("-e, --email <type>")
-//     .option("-p, --phone <type>");
-
-// program.parse();
-
-// const options = program.option();
-// invorceAction(options)
-
-
-// invorceAction({ action: 'list' })
-// invorceAction({action: 'get', id: '1'})
-// invorceAction({action: "add", name: "Женя Марищин", email: "maryshchyn89@gmail.com", phone: "(066) 026 64 24"})
-// invorceAction({action: "remove", id: "1dWSQkwwggHmIE7591fHh"})
 
 
 
