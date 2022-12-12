@@ -10,7 +10,7 @@ const listContsacts = async () => {
     return JSON.parse(result) 
 }
 
-const getById = async (id) => {
+const get = async (id) => {
     const contactsId = String(id)
     const contacts = await listContsacts();
     const result = contacts.find(item => item.id === contactsId);
@@ -32,7 +32,7 @@ const add = async ({ name, email, phone }) => {
     return newContact;
 };
 
-const deleteById = async (id) => {
+const remove = async (id) => {
     const contactsId = String(id)
     const contacts = await listContsacts();
     const index = contacts.findIndex(item => item.id === contactsId);
@@ -47,7 +47,7 @@ const deleteById = async (id) => {
 
 module.exports = {
     listContsacts,
-    getById,
+    get,
     add,
-    deleteById,
+    remove,
 }
